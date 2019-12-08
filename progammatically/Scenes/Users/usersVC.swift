@@ -8,10 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class usersVC: UIViewController {
+    @IBOutlet weak var tableView: UITableView!
+    var presenter:usersVCpresenter!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        presenter = usersVCpresenter(view: self)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,6 +22,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 
 }

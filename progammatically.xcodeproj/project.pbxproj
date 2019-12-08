@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C8012B52398FD97009EC6DC /* usersVC+ tableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012B42398FD97009EC6DC /* usersVC+ tableView.swift */; };
+		8C8012B92398FEA0009EC6DC /* usersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012B72398FEA0009EC6DC /* usersCell.swift */; };
+		8C8012BA2398FEA0009EC6DC /* usersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C8012B82398FEA0009EC6DC /* usersCell.xib */; };
+		8C8012BD2399073D009EC6DC /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012BC2399073D009EC6DC /* user.swift */; };
+		8C8012C12399087E009EC6DC /* usersVCInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012C02399087E009EC6DC /* usersVCInteractor.swift */; };
+		8C8012C32399088D009EC6DC /* usersVCPesenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012C22399088D009EC6DC /* usersVCPesenter.swift */; };
+		8C8012C5239912C4009EC6DC /* usersVC+presenterDelagation .swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8012C4239912C4009EC6DC /* usersVC+presenterDelagation .swift */; };
 		8CCEB38422D89A1A00FC000E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEB38322D89A1A00FC000E /* AppDelegate.swift */; };
-		8CCEB38622D89A1A00FC000E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEB38522D89A1A00FC000E /* ViewController.swift */; };
+		8CCEB38622D89A1A00FC000E /* usersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCEB38522D89A1A00FC000E /* usersVC.swift */; };
 		8CCEB38922D89A1A00FC000E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCEB38722D89A1A00FC000E /* Main.storyboard */; };
 		8CCEB38B22D89A2700FC000E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCEB38A22D89A2700FC000E /* Assets.xcassets */; };
 		8CCEB38E22D89A2700FC000E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCEB38C22D89A2700FC000E /* LaunchScreen.storyboard */; };
@@ -26,9 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C8012B42398FD97009EC6DC /* usersVC+ tableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usersVC+ tableView.swift"; sourceTree = "<group>"; };
+		8C8012B72398FEA0009EC6DC /* usersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersCell.swift; sourceTree = "<group>"; };
+		8C8012B82398FEA0009EC6DC /* usersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = usersCell.xib; sourceTree = "<group>"; };
+		8C8012BC2399073D009EC6DC /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		8C8012C02399087E009EC6DC /* usersVCInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersVCInteractor.swift; sourceTree = "<group>"; };
+		8C8012C22399088D009EC6DC /* usersVCPesenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersVCPesenter.swift; sourceTree = "<group>"; };
+		8C8012C4239912C4009EC6DC /* usersVC+presenterDelagation .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "usersVC+presenterDelagation .swift"; sourceTree = "<group>"; };
 		8CCEB38022D89A1A00FC000E /* progammatically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = progammatically.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCEB38322D89A1A00FC000E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CCEB38522D89A1A00FC000E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CCEB38522D89A1A00FC000E /* usersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersVC.swift; sourceTree = "<group>"; };
 		8CCEB38822D89A1A00FC000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CCEB38A22D89A2700FC000E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CCEB38D22D89A2700FC000E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,12 +70,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C8012AE2398FB13009EC6DC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8C8012BF2399085E009EC6DC /* Interactor */,
+				8C8012BE23990852009EC6DC /* Presenter */,
+				8C8012B62398FE7D009EC6DC /* TableViewCells */,
+				8C8012B32398FB7F009EC6DC /* Users */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8C8012AF2398FB3E009EC6DC /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				8CCEB38F22D89A2700FC000E /* Info.plist */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		8C8012B02398FB4E009EC6DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8CCEB38C22D89A2700FC000E /* LaunchScreen.storyboard */,
+				8CCEB38A22D89A2700FC000E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C8012B12398FB63009EC6DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CCEB38722D89A1A00FC000E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8C8012B22398FB72009EC6DC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8CCEB38322D89A1A00FC000E /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8C8012B32398FB7F009EC6DC /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				8CCEB38522D89A1A00FC000E /* usersVC.swift */,
+				8C8012B42398FD97009EC6DC /* usersVC+ tableView.swift */,
+				8C8012C4239912C4009EC6DC /* usersVC+presenterDelagation .swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		8C8012B62398FE7D009EC6DC /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8C8012B72398FEA0009EC6DC /* usersCell.swift */,
+				8C8012B82398FEA0009EC6DC /* usersCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8C8012BB2399071D009EC6DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C8012BC2399073D009EC6DC /* user.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8C8012BE23990852009EC6DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8C8012C22399088D009EC6DC /* usersVCPesenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8C8012BF2399085E009EC6DC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8C8012C02399087E009EC6DC /* usersVCInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		8CCEB37722D89A1A00FC000E = {
 			isa = PBXGroup;
 			children = (
 				8CCEB38222D89A1A00FC000E /* progammatically */,
 				8CCEB39722D89A2800FC000E /* progammaticallyTests */,
 				8CCEB38122D89A1A00FC000E /* Products */,
+				C91B634ACD87F81AA944BF08 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +180,12 @@
 		8CCEB38222D89A1A00FC000E /* progammatically */ = {
 			isa = PBXGroup;
 			children = (
-				8CCEB38322D89A1A00FC000E /* AppDelegate.swift */,
-				8CCEB38522D89A1A00FC000E /* ViewController.swift */,
-				8CCEB38722D89A1A00FC000E /* Main.storyboard */,
-				8CCEB38A22D89A2700FC000E /* Assets.xcassets */,
-				8CCEB38C22D89A2700FC000E /* LaunchScreen.storyboard */,
-				8CCEB38F22D89A2700FC000E /* Info.plist */,
+				8C8012BB2399071D009EC6DC /* Model */,
+				8C8012B22398FB72009EC6DC /* Core */,
+				8C8012B12398FB63009EC6DC /* Storyboards */,
+				8C8012B02398FB4E009EC6DC /* Resources */,
+				8C8012AF2398FB3E009EC6DC /* Configurations */,
+				8C8012AE2398FB13009EC6DC /* Scenes */,
 			);
 			path = progammatically;
 			sourceTree = "<group>";
@@ -94,6 +197,13 @@
 				8CCEB39A22D89A2800FC000E /* Info.plist */,
 			);
 			path = progammaticallyTests;
+			sourceTree = "<group>";
+		};
+		C91B634ACD87F81AA944BF08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8012BA2398FEA0009EC6DC /* usersCell.xib in Resources */,
 				8CCEB38E22D89A2700FC000E /* LaunchScreen.storyboard in Resources */,
 				8CCEB38B22D89A2700FC000E /* Assets.xcassets in Resources */,
 				8CCEB38922D89A1A00FC000E /* Main.storyboard in Resources */,
@@ -197,8 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCEB38622D89A1A00FC000E /* ViewController.swift in Sources */,
+				8C8012BD2399073D009EC6DC /* user.swift in Sources */,
+				8C8012B92398FEA0009EC6DC /* usersCell.swift in Sources */,
+				8CCEB38622D89A1A00FC000E /* usersVC.swift in Sources */,
+				8C8012B52398FD97009EC6DC /* usersVC+ tableView.swift in Sources */,
+				8C8012C12399087E009EC6DC /* usersVCInteractor.swift in Sources */,
 				8CCEB38422D89A1A00FC000E /* AppDelegate.swift in Sources */,
+				8C8012C32399088D009EC6DC /* usersVCPesenter.swift in Sources */,
+				8C8012C5239912C4009EC6DC /* usersVC+presenterDelagation .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +477,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X69FY88H;
-				INFOPLIST_FILE = progammatically/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/progammatically/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +495,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 57X69FY88H;
-				INFOPLIST_FILE = progammatically/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/progammatically/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
